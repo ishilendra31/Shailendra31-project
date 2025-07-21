@@ -1,0 +1,6 @@
+api- https://api.currencyapi.com/v3/latest?apikey=cur_live_9Wyeo2i5JDxeozKIDYuSt7BY76uzJGgtsFpXgRkP&currencies=EUR%2CUSD%2CCAD
+request- https://api.currencyapi.com/v3/latest?apikey=cur_live_9Wyeo2i5JDxeozKIDYuSt7BY76uzJGgtsFpXgRkP
+key- cur_live_9Wyeo2i5JDxeozKIDYuSt7BY76uzJGgtsFpXgRkP
+
+curl -G https://api.currencyapi.com/v3/latest \
+    -H "apikey: YOUR-API-KEY"

@@ -1,0 +1,197 @@
+
+1.If you have two conditions, when will the and operator return True?
+
+The and operator returns True only if both conditions are True.
+Truth Table for 'and' Operator
+For conditions 1 and conditions 2:
+(Condition 1 | Condition 2 | Result (Condition1 AND Condition2) )
+
+( True | True | True )
+
+( True | False | False )
+
+( False | True | False )
+
+( False | False | False )
+
+
+2.If you have two conditions, when will the and operator return False?
+
+The and operator returns False if at least one of the conditions is False.
+Truth Table for 'and' Operator
+For conditions 1 and conditions 2:
+(Condition 1 | Condition 2 | Result (Condition1 AND Condition2) )
+
+( True | True | True )
+
+( True | False | False )
+
+( False | True | False )
+
+( False | False | False )
+
+
+3.If you have two conditions, when will the or operator return True?
+
+The or operator returns True if at least one condition is True.
+Truth Table for 'or' Operator
+For conditions 1 and conditions 2:
+(Condition 1 | Condition 2 | Result (Condition1 OR Condition2) )
+
+| True | True | True |
+
+| True | False | True |
+
+| False | True | True |
+
+| False | False | False |
+
+
+4.If you have two conditions, when will the or operator return False?
+
+The or operator returns False only when both conditions are False.
+Truth Table for 'or' Operator
+For conditions 1 and conditions 2:
+(Condition 1 | Condition 2 | Result (Condition1 OR Condition2) )
+
+| True | True | True |
+
+| True | False | True |
+
+| False | True | True |
+
+| False | False | False |
+
+
+5.If a condition is initially False, what will be the result after applying the not operator?
+
+If a condition was initially False after applying the not operator will invert it to True.
+
+Here is the Truth Table for 'not' Operator
+
+| Condition | Result (NOT Condition) |
+
+| False | True |
+
+| True | False |
+
+
+6.Write a program to check a customer's discount eligibility based on the following conditions.If the total bill is greater than or equal to 10,000 and they have a membership card, print "30% discount".If the total bill is greater than or equal to 5,000 or they have a membership card, print "10% discount".Otherwise, print "No discount".
+
+total_bill=int(input())
+
+membership_card=input()
+
+if total_bill>=10000 and membership_card=="yes":
+    print("30% Discount")
+
+elif total_bill>=5000 or membership_card=="yes":
+    print("10% Discount")
+
+else:
+    print("no discount")
+
+
+7.Write a program to determine the exam result of a student based on their scores:If the student scores more than 35 in both Math and Science, print "Passed in both subjects."If they pass in only one subject, print "Passed in one subject, needs improvement."If they fail in both subjects, print "Failed in both subjects."
+
+if math_marks>35 and science_marks>35:
+    print("Pass in both subject")
+
+elif math_marks>35 or science_marks>35:
+    print( "Passed in one subject, needs improvement")
+ 
+else:
+    print("fail in both subject")
+
+
+8.Write a program to categorize electricity consumption based on the units consumed:If units are less than 100, print "Low consumption".If units are between 100 and 300, print "Medium consumption".If units are greater than 300, print "High consumption".If units are 0 or less, print "Invalid unit count."
+
+unit_consumed=int(input())
+
+if unit_consumed<100 and unit_consumed>0:
+    print("Low comsumed")
+
+elif unit_consumed>=100 and unit_consumed<=300:
+    print("medium consumed")
+
+elif unit_consumed>300:
+    print("high comsumed")
+
+else:
+    print("Invalid unit count")
+
+
+9.Write a program to decide if a person can go for a trip based on the following conditions:If the weather is sunny and they have at least 5000 in savings, print "Go for a trip."If the weather is not sunny but they have enough savings, print "Maybe plan for another day."If they don't have enough savings, print "Save more before planning a trip."
+
+weather=input()
+
+savings=int(input())
+
+if weather=="sunny" and saving>=5000:
+    print("Go for a trip")
+
+elif weather!="sunny" and saving>=5000:
+    print ("Maybe plan for another day")
+
+elif saving<5000:
+    print ("Save more before planning a trip")
+
+
+10.Write a program to take two conditions (yes or no) as input, convert them to boolean (True for yes, False for no), and print the result for each logical operation:condition1 and condition2.condition1 or condition2.not condition1.not condition2
+
+condition1=input()
+if condition1=="yes":
+    condition1=True
+else:
+    condition1=False
+
+condition2=input()
+
+if condition2=="yes":
+    condition2=True
+else:
+    condition2=False
+
+if condition1 and condition2:
+    print("condition1 and condition2: True")
+else:
+    print("condition1 and condition2: False")
+
+if condition1 or condition2:
+    print("condition1 or condition2: True")
+else:
+    print("condition1 or condition2: False")
+
+if not condition1:
+    print("not condition1: True")
+else:
+    print("not condition1: False")
+
+if not condition2:
+    print("not condition2: True")
+else:
+    print("not condition2: False")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

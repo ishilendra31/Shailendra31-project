@@ -1,0 +1,130 @@
+
+1.Write a program to take the principal amount P, the rate of interest R in percentage, and the time T in years as inputs, and calculate the simple interest.
+
+p=float(input())
+r=float(input())
+t=float(input())
+
+si=(p * r * t)/100
+
+print(si)
+
+
+2.Write a program to continuously accept numbers from a user, add them, and then print the sum when the user enters -1.
+
+t_sum=0
+while True:
+    num=int(input())
+    if num==-1:
+        break
+    t_sum+= num
+
+print(t_sum)
+
+
+3.Write a program to take a number N as input from the user and print numbers from 1 to N, skipping numbers that are multiples of 3.
+
+n=int(input())
+i=1
+while i<=n:
+    if i%3==0:
+        i+=1
+        continue
+    print(i)
+    i+=1
+
+
+4.Write a program to convert a given temperature from Celsius to Fahrenheit using the formula (C * 9/5) + 32. Only accept temperatures in the range from 0°C to 100°C
+
+c=float(input())
+
+if c>=0 and c<=100:
+    f=(c*9/5)+32
+    print(f)
+else:
+    print("Invalid temperature")
+
+
+5.Write a program to take an upper limit N as input from the user and multiply all positive even numbers up to N together, then print the product. Use a while loop in the implementation.
+
+n=int(input())
+i=1
+pro=1
+while i<=n:
+    if i%2==0:
+        pro*=i
+    i+=1
+print(pro)
+
+
+6.Write a program to check if a given number is prime. The program should not check even numbers except for 2.
+
+num=int(input("enter a number"))
+if num<2:
+    print("Not Prime")
+elif num==2:
+    print("prime")
+elif num%2==0:
+    print("Not Prime")
+elif num%2!=0:
+    count=0
+    i=2
+    while i<num:
+        if num%i==0:
+            count+=1
+        i+=1
+    if count!=0:
+        print("Not Prime")
+    else:
+        print("Prime")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

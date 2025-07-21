@@ -1,0 +1,98 @@
+What is Programming?
+A Simple Explanation
+Programming is the process of giving instructions to a computer. A computer is just a machine that follows these instructions exactly as they are given. It doesn't think for itself, nor does it have the ability to question or change the instructions.
+
+And who gives these instructions? A programmer. A programmer is someone who writes clear, detailed instructions for the computer to follow.
+
+Computers are Perfect Followers
+The computer is extremely good at following instructions. It will:
+
+Never make mistakes in following instructions.
+
+Never change anything on its own, even if it notices that something is not working as expected.
+
+Always do exactly what it is told to do.
+
+But here's the important part: because a computer doesn't have a brain, it won't know if circumstances change or if an instruction is wrong. It will still follow the original instructions—no matter what happens.
+
+A Real-Life Example
+Imagine you ask your brother to bring you a specific chocolate from the store. Your brother is very obedient and follows instructions exactly—without using his own judgment.
+
+1. When Instructions are Correct
+You tell him, "Get me a Dairy Milk chocolate from the store."
+
+He goes to the store, finds the Dairy Milk, and brings it back.
+
+Everything works perfectly because the instructions were clear and correct.
+
+2. When Circumstances Change, but Instructions Stay the Same
+The next time, you give the same instruction: "Get me a Dairy Milk chocolate."
+
+But this time, Dairy Milk is out of stock at the store.
+
+He goes to the store, but since the chocolate you asked for is not available, he doesn't get you any chocolate.
+
+Why? Because you didn’t tell him what to do if Dairy Milk wasn’t available.
+
+He didn’t call you to ask for an alternative because that was not part of the instructions.
+
+3. When Instructions are Wrong
+Another time, you mistakenly say, "Get me a Dally Milk chocolate."
+
+Your brother goes to the store but can't find "Dally Milk."
+
+He returns without any chocolate because he followed the instructions exactly, even though the name was incorrect.
+
+Again, he didn’t think to call and confirm, because that wasn't part of the instruction.
+
+Whose Fault Was It?
+When your brother comes home without the chocolate in point 2 and 3, you might scold him. You might ask, "Why didn't you just call me and ask for an alternative?"
+
+But think about it—did you actually ask him to do that? You assumed that he would use his brain or judgment to figure it out and call you.
+
+But whose fault was it really? It was your fault because you didn't give him clear and detailed instructions. You didn't consider every possible situation that could happen.
+
+This is exactly how we need to deal with computers. We must give them instructions that are detailed and cover every possibility. If we miss something, the computer will not "think" or "ask" what to do. It will just follow the original instructions—no matter what happens.
+
+How This Relates to Programming
+This is exactly how a computer works:
+
+It follows instructions perfectly.
+
+It doesn’t handle changes in situations unless we tell it how to.
+
+It doesn’t correct mistakes in the instructions.
+
+It won’t ask questions or use its judgment.
+
+So, programming is about giving the computer the right instructions. If circumstances change or if there are mistakes in the instructions, the computer will still follow the original instructions—even if the result is wrong!
+
+If Computers Don't Have a Brain, Why Do We Need Them?
+You might wonder, if a computer cannot think or adjust on its own, why do we need it?
+
+The answer is simple:
+
+Computers are extremely fast – They can complete tasks in seconds that might take humans hours.
+
+They work continuously – Computers never get tired or need breaks.
+
+They follow instructions perfectly – As long as the instructions are correct, computers won't make mistakes.
+
+This makes computers perfect for tasks that require speed, accuracy, and repetition. For example:
+
+A factory can use computers to assemble hundreds of products every minute without stopping.
+
+A bank can use computers to process thousands of transactions instantly.
+
+A doctor can use computers to store and find patient records in seconds.
+
+Humans and computers work together: Humans decide what needs to be done, and computers help by doing the work faster and without error.
+
+Conclusion: Why Giving the Right Instructions is Important
+Programming is about giving the computer clear, correct, and complete instructions. Since the computer has no brain, it will only do exactly what it is told.
+
+A good programmer is someone who understands how to give instructions that work even when circumstances change. They think about every possible situation and write instructions that consider all possibilities.
+
+The better the instructions, the better the computer will perform.
+
+This is why understanding how computers follow instructions is the first step to becoming a good programmer!

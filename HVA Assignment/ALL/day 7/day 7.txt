@@ -1,0 +1,332 @@
+day 7
+Conditional Statements - II
+In the previous article, we learned about basic if-else statements. We checked one condition—if it was true, we did something. If it was false, we did something else. In this, we checked only one condition.
+
+Now, let's extend this by understanding scenarios where there are multiple possibilities, that is, where there are multiple conditions. This is where if-elif-else statements come into play.
+
+If-Elif-Else Statements
+In programming, we can use if-elif-else statements to handle multiple possibilities.
+
+Example 1: Temperature Check
+
+temperature = int(input())
+
+if temperature > 30:
+
+    print("Wear light clothes.")
+
+elif 20 <= temperature <= 30:
+
+    print("Wear normal clothes.")
+
+elif temperature < 20:
+
+    print("Wear warm clothes.")
+
+else:
+
+    print("Stay indoors.")
+
+In this example:
+
+The program first checks if the temperature is above 30.
+
+If not, it checks if it's between 20 and 30.
+
+If not, it checks if it's below 20.
+
+If none of the conditions are true, it falls to the else condition.
+
+Example 2: Grading System
+
+marks = int(input())
+
+if marks >= 90:
+
+    print("Grade A")
+
+elif marks >= 80:
+
+    print("Grade B")
+
+elif marks >= 70:
+
+    print("Grade C")
+
+elif marks >= 60:
+
+    print("Grade D")
+
+else:
+
+    print("Grade F")
+
+Here:
+
+The conditions are checked in order from highest to lowest.
+
+The first condition that is true will be executed.
+
+If no condition matches, the program executes the else block.
+
+Example 3: Discount Calculation
+
+bill_amount = int(input())
+
+if bill_amount > 100:
+
+    print("20% discount applied")
+
+elif bill_amount > 50:
+
+    print("10% discount applied")
+
+elif bill_amount > 20:
+
+    print("5% discount applied")
+
+else:
+
+    print("No discount")
+
+Here, the program:
+
+Checks the bill amount against each condition.
+
+Applies the highest possible discount.
+
+If none match, it defaults to "No discount."
+
+In these examples:
+
+The else block is used if none of the above conditions are true.
+
+Sometimes, the else block simply handles whatever condition is left and doesn't need to be explicitly checked.
+
+It's important to understand the context of else based on how the conditions are framed.
+
+Logical Operators
+Sometimes, what we want to do depends on more than one condition. For example, you may need to check if two conditions are true or if at least one of the conditions is true, and then do something.
+
+This is where logical operators come into play.
+
+Python provides three logical operators:
+
+and: Returns True if both conditions are true.
+
+or: Returns True if at least one condition is true.
+
+not: Reverses the result of the condition. If the condition is True, it becomes False and vice versa.
+
+Example 1: Checking Two Conditions with and
+
+age = int(input())
+
+income = int(input())
+
+if age >= 18 and income >= 20000:
+
+    print("Eligible for loan")
+
+else:
+
+    print("Not eligible for loan")
+
+This example checks two conditions: if the person is 18 years or older and if their income is at least 20,000.
+
+The and operator ensures that both conditions must be true for the program to print "Eligible for loan."
+
+If even one condition is false (for example, the person is underage or their income is below 20,000), the program will print "Not eligible for loan."
+
+Example 2: Checking Either Condition with or
+
+marks = int(input())
+
+extra_credit = input()  # yes or no
+
+if marks >= 50 or extra_credit == "yes":
+
+    print("Passed")
+
+else:
+
+    print("Failed")
+
+This example checks if the student has either scored 50 or more, or if they have received extra credit.
+
+The or operator means that if any one of the conditions is true, the program will print "Passed."
+
+If both conditions are false (marks below 50 and no extra credit), then the program will print "Failed."
+
+Example 3: Using not to Reverse a Condition
+
+is_raining = input()  # yes or no
+
+if not is_raining == "yes":
+
+    print("Go for a walk")
+
+else:
+
+    print("Stay indoors")
+
+First, the program checks the condition is_raining == "yes". If this is true (meaning it is raining), the condition will be True initially.
+
+The not operator then reverses the result. So, if it's raining (True), applying not makes it False, and the program will suggest "Stay indoors."
+
+If it's not raining, the condition is_raining == "yes" is False initially, and applying not makes it True, so the program suggests "Go for a walk."
+
+This is a simple way to reverse conditions and handle decision-making when the negative scenario is the one being checked.
+
+Earlier, one condition was associated with one action. Now, with logical operators, multiple conditions can be associated with one action. Logical operators are powerful when you need to combine multiple conditions in a single statement. They help in writing cleaner and more effective decision-making logic.
+
+Logical Expressions
+Earlier we learnt that an expression is a combination of values and operators that results in a single value.
+
+Just like arithmetic and conditional operators, logical operators also form expressions.
+
+A and B
+
+While arithmetic operators deal with numbers, like 4+5 and conditional operators compare values, like 7 > 5, logical operators combine boolean conditions - conditions that are either True or False. Here, A and B are such conditions that are either True or False.
+
+age >= 18 and income >= 20000
+
+Just like conditional operators, logical expressions with logical operators will also result in either True or False.
+
+True and True # This is a logical expression that evaluates to True
+
+True and False # This is a logical expression that evaluates to False
+
+False and True # This is a logical expression that evaluates to False
+
+False and False # This is a logical expression that evaluates to False
+
+Let's understand why each of these evaluates as it does using some sample values for age and income:
+
+True and True: Suppose age = 20 and income = 25000.
+
+age ≥ 18 → True
+
+income ≥ 20000 → True
+
+Since both conditions are true, the entire expression is True.
+
+True and False: Suppose age = 25 and income = 15000.
+
+age ≥ 18 → True
+
+income ≥ 20000 → False
+
+Since one condition is false, the entire expression is False.
+
+False and True: Suppose age = 16 and income = 30000.
+
+age ≥ 18 → False
+
+income ≥ 20000 → True
+
+Since one condition is false, the entire expression is False.
+
+False and False: Suppose age = 15 and income = 10000.
+
+age ≥ 18 → False
+
+income ≥ 20000 → False
+
+Since both conditions are false, the entire expression is False.
+
+If the operator is OR it works very differently.
+
+age >= 18 or income >= 20000
+
+The result is True if at least one of the conditions is True.
+
+True or True # This is a logical expression that evaluates to True
+
+True or False # This is a logical expression that evaluates to True
+
+False or True # This is a logical expression that evaluates to True
+
+False or False # This is a logical expression that evaluates to False
+
+Let's understand this with different scenarios:
+
+True or True: Suppose age = 20 and income = 25000.
+
+age ≥ 18 → True
+
+income ≥ 20000 → True
+
+Since at least one condition is True, the final result is True.
+
+True or False: Suppose age = 22 and income = 15000.
+
+age ≥ 18 → True
+
+income ≥ 20000 → False
+
+Since one condition is True, the overall result is still True.
+
+False or True: Suppose age = 16 and income = 30000.
+
+age ≥ 18 → False
+
+income ≥ 20000 → True
+
+Since one condition is True, the overall result is True.
+
+False or False: Suppose age = 15 and income = 10000.
+
+age ≥ 18 → False
+
+income ≥ 20000 → False
+
+Since both conditions are false, the overall result is False.
+
+This is how logical operators evaluate multiple conditions and determine the final outcome.
+
+Truth Tables
+Since A and B can each have two possible values (True or False), there are always four possible scenarios for both and and or operators. We can represent these scenarios using a truth table, which clearly shows how the operators work with different combinations of conditions.
+
+Truth Table for 'and' Operator
+The result is True only if both conditions are True.
+
+| Condition 1 | Condition 2 | Result (Condition1 AND Condition2) |
+
+|-------------|-------------|-----------------------------------|
+
+| True | True | True |
+
+| True | False | False |
+
+| False | True | False |
+
+| False | False | False |
+
+Truth Table for 'or' Operator
+The result is True if at least one condition is True.
+
+| Condition 1 | Condition 2 | Result (Condition1 OR Condition2) |
+
+|-------------|-------------|----------------------------------|
+
+| True | True | True |
+
+| True | False | True |
+
+| False | True | True |
+
+| False | False | False |
+
+Truth Table for 'not' Operator
+Since the not operator only takes one condition, there are only two possible scenarios. It simply reverses the condition.
+
+| Condition | Result (NOT Condition) |
+
+|-----------|-----------------------|
+
+| True | False |
+
+| False | True |
+
+These tables make it easy to understand how logical operators determine the outcome based on different condition combinations.

@@ -1,0 +1,81 @@
+
+1.What is programming?
+
+Programming is the process of giving clear instructions to a computer so it can perform tasks. A computer is just a machine that follows these instructions exactly as they are given. It cannot think, reason, or change the instructions on its own. It simply carries out commands with complete accuracy. This strict follow through makes computers powerful but also unforgiving any mistake in the instructions can cause errors. That’s why good programming requires careful planning, logical thinking, and attention to detail.
+
+
+2.What happens if a programmer gives the wrong instructions to a computer?
+
+If a programmer gives the wrong instructions to a computer the computer will follow them exactly as they are given without questioning or correcting them. A computer does not have the ability to think, reason, or clarify mistakes. It will execute the incorrect instructions precisely which can lead to errors, unexpected results or even system failures. This highlights the importance of giving clear, detailed, and correct instructions when programming.
+
+
+3.Why does a computer follow wrong instructions if given?
+
+A computer follows wrong instructions if given because it does not have the ability to think or make decisions on its own. It simply executes commands exactly as they are written without questioning whether they are correct or not. Unlike humans who can recognize mistakes and ask for clarification, a computer does not understand context it only processes instructions in a logical and literal manner.
+
+
+4.In the real-life example, why didn’t the brother bring an alternative chocolate when Dairy Milk was not available?
+
+The brother didn’t bring an alternative chocolate because he was following the instructions exactly as they were given. The request was specifically for “Dairy Milk,” and "Dairy milk" was not available, he simply returned empty handed instead of picking an alternative. He didn’t think to call and confirm because that wasn’t part of the instructions.
+
+
+5.Why do we still need computers if they can’t think for themselves?
+
+We still need computers even though they can’t think for themselves because they are incredibly fast, reliable, and efficient. They can complete tasks in seconds that might take humans hours, work continuously without getting tired, and follow instructions perfectly without making mistakes as long as the instructions are correct.
+
+
+6.What makes someone a good programmer?
+
+A good programmer is someone who knows how to give clear, correct, and complete instructions to a computer. Since computers only follow instructions exactly as given, a good programmer thinks about all possible situations and writes instructions that work even when circumstances change. The better the instructions, the better the computer performs. Understanding how computers follow instructions is the first step to becoming a good programmer.
+
+
+7.What should we do to avoid mistakes when giving instructions to a computer?
+
+To avoid mistakes when giving instructions to a computer, be clear and give exact instructions. Think ahead and consider different situations to make sure your instructions work in all cases. Always check for mistakes and fix errors before running the instructions. Test them to see if they work correctly and make improvements if needed. Keep the instructions simple and easy to follow. Good instructions help the computer perform tasks correctly.
+
+
+8.Task Explanation:
+
+You are going out, and your manager from work might visit your home in your absence. You need to give your brother instructions to prepare a perfect cup of tea for the manager.
+But here's the challenge—your brother will only follow the instructions exactly as given. He will not use his own judgment or make decisions if something goes wrong.
+
+Your Goal:
+
+Write step-by-step instructions for your brother that are detailed, clear, and cover every possible situation. Your instructions should ensure that the tea is prepared properly, even if some things go wrong.
+
+Things to Consider While Writing Instructions:
+
+What ingredients are required? (e.g., tea leaves, sugar, milk, water)
+
+What if something is missing (like no sugar or milk)? What alternatives should be used?
+
+How much of each ingredient should be added? (e.g., how many spoons of sugar or tea leaves)
+
+What if the water doesn’t boil properly? What to check or do?
+
+Should the tea be served in a particular cup? What if that cup is dirty?
+
+Should the tea be stirred, and for how long?
+
+What if the manager asks for less sugar or no milk?
+
+How should the tea be served? Should it be on a tray? Should biscuits be added?
+
+
+1.Gather Ingredients and Equipment (a)Take out tea leaves, sugar, milk, and water. (a)Find a clean pot, cup, spoon, and strainer. (a)If anything is missing, look for an alternative (e.g., if there is no sugar, use honey).
+
+2.Check the Water (a)Fill the pot with fresh clean water. (b)If the water is not available, use bottled water. (c)If the water is dirty, filter it before using.
+
+3.Boil the Water (a)Place the pot on the stove and turn on the heat. (b)Wait until the water boils properly (bubbles should appear). (c)If the water does not boil, check if the stove is on. (d)If the stove is not working, try another burner or use an electric kettle.
+
+4.Add Tea Leaves (a)Once the water boils, add one teaspoon of tea leaves per cup. (b)If the manager prefers stronger tea, add a little more. (c)If tea leaves are not available, check for tea bags and use one per cup.
+
+5.Add Milk and Sugar (a)Pour milk into the pot (about ¼ of the total tea). (b)If the manager prefers tea without milk, skip this step. (c)Add sugar based on preference (one or two spoons). (d)If sugar is missing, offer an alternative like honey.
+
+6.Stir and Let It Brew (a)Stir the tea properly using a spoon. (b)Let the tea brew for 2–3 minutes for the best flavor. (c)If the tea spills, clean it immediately.
+
+7.Strain and Serve (a)Use a strainer to pour the tea into a clean cup. (b)If the cup is dirty, wash it before serving. (c)If the manager wants biscuits, place them on a tray.
+
+8.Final Check Before Serving (a)Taste a small spoonful to check if it’s too strong or too sweet. (b)If the tea is too strong, add more milk. (c)If it is too weak, let it brew for another minute.
+
+9.Serve the Tea (a)Place the cup on a tray and serve it to the manager. (b)Be polite and ask if they need anything else.

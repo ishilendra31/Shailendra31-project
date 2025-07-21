@@ -1,0 +1,9 @@
+Audio
+Reflection on My HVA Screening Journey
+Over the past days, I have learned the fundamentals of programming, problem-solving, and self-learning. At first, it was challenging to stay consistent and adjust to the self-learning approach, but with practice and patience, I gradually improved. One of my biggest learning moments was understanding how computers work—they only follow instructions exactly as given. I also learned about loops and conditional statements. Another important concept I explored was dry running, a method to check code step by step before running it, which helped me understand and fix errors efficiently.
+
+Throughout this journey, I covered various topics, including the basics of programming, Python syntax, loops, conditions, dry running, and problem-solving techniques.  Some of my best moments were understanding loops, applying dry running effectively. These experiences helped me develop logical thinking .
+
+The most challenging parts of this journey were finding and fixing mistakes in code, maintaining consistency in my learning, and initially feeling nervous about speaking in discussions. However, the best parts included finally understanding loops and conditions, gaining confidence in group discussions, and experiencing the satisfaction of seeing my code work correctly after fixing mistakes. These small achievements motivated me to keep pushing forward.
+
+Moving forward, I plan to keep practicing coding and problem-solving regularly. I will focus on thinking step-by-step when writing code to improve my logic and debugging skills. This screening journey has helped me improve my coding skills, logical thinking, and confidence, and I am excited to continue learning and applying these skills in the future.
