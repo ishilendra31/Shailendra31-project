@@ -1,0 +1,60 @@
+body{
+    background-color: #F39F9F;
+    margin: 0;
+}
+
+.div_main{    
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div1 {
+   display: flex;
+    flex-direction: column;      
+    justify-content: center;     
+    align-items: center; 
+    background-color: #B95E82;
+    width: 70%;
+    height: 40vh;
+    color: black;
+    font-size: 24px;
+    border-radius: 8px;
+}
+#form1{
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+#lable_1{
+    font-size: larger;
+    margin-top: 30px;
+}
+#APIinput{
+    outline: none;
+    font-size: medium;
+    width: 500px;
+    height: 50px;
+    border-radius: 8px;
+    border: 1px solid black;
+    margin-top: 20px;
+}
+#fetchBtn{
+    margin-top: 30px;
+    width: 80px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+.rep {
+    display:none;  
+    background-color: #B95E82;
+    width: auto;
+    height: auto;
+    color: black;
+    border-radius: 8px;
+    gap: 15px
+}
