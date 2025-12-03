@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia Battle Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="playersname" class="playerbox" >
+        <h1>Welcome to Trivia Battle Game</h1>
+        <input type="text" placeholder="First player name" id="playerone" class="player">
+        <input type="text" placeholder="Second player name" id="playertwo" class="player">
+        <button id="namesubmit-btn">Submit</button>
+    </div>
+    <div id="category-selection" class="categoriesbox" style="display: none;">
+        <h1>List of categories</h1>
+        <button id="music" class="categoriesbtn">Music</button>
+        <button id="filmandtv" class="categoriesbtn">Film and tv</button>
+        <button id="sportandleisure" class="categoriesbtn">Sport and leisure</button>
+        <button id="artsandliterature" class="categoriesbtn">Arts and literature</button>
+        <button id="history" class="categoriesbtn">History</button>
+        <button id="societyandculture" class="categoriesbtn">Society and culture</button>
+        <button id="science" class="categoriesbtn">Science</button>
+        <button id="geography" class="categoriesbtn">Geography</button>
+        <button id="generalknowledge" class="categoriesbtn">General knowledge</button>
+        <button id="foodanddrink" class="categoriesbtn">Food and drink</button>
+    </div>
+    <div>
+    <div id="question-display-selection" class="question-display" style="display: none;">
+        <h2 id="question-no">Question 1</h2>
+        <h2 id="question">Which American rock band released the studio album 'The Hunting Party'?</h2>
+        <div id="question-option" class="option">
+            <label class="label">
+             <input type="radio" name="band"  id="question-option-one-radio" value="">
+             <span class="custom-radio" id="question-option-one">Linkin Park</span>
+            </label>
+            <br>
+            <label class="label">
+             <input type="radio" name="band"  id="question-option-two-radio" value="">
+             <span class="custom-radio" id="question-option-two">Alice in Chains</span>
+            </label>
+            <br>
+            <label class="label">
+             <input type="radio" name="band"  id="question-option-three-radio" value="">
+             <span class="custom-radio" id="question-option-three">Hollywood Undead</span>
+            </label>
+            <br>
+            <label class="label">
+             <input type="radio" name="band"  id="question-option-four-radio" value="">
+             <span class="custom-radio" id="question-option-four">System of a Down</span>
+            </label>
+        </div>
+        <br>
+        <span id="correct-ans"></span>
+        <br>
+        <button id="Next-question-btn" class="question-btn">Next Question</button>
+        <h3 id="difficulty-level" class="level">difficulty level - easy</h3>
+        <h3 id="turn" class="level">player one turn</h3>
+        <h4 id="playerone-score" class="score">Player one score: 00</h4>
+        <h4 id="playersecond-score" class="score">Player second score: 00</h4>
+    </div>
+    
+    <div id="summary-section" class="summary" style="display: none;">
+        <h1>Summary</h1>
+        <h2 id="playerone-score-summary" class="score">Player one score: 00</h2>
+        <h2 id="playersecond-score-summary" class="score">Player second score: 00</h2>
+        <button id="Choose-another-category">Choose another category</button>
+        <button id="end-game-btn">End game</button>
+    </div>
+    <div id="ending-game-section" style="display: none;"> 
+        <h1>Final Results</h1>
+        <h2 id="endplayerone-score">Player 1: name and final score</h2>
+        <h2 id="endplayertwo-score">Player 2: name and final score</h2>
+        <br>
+        <h1>Winner:</h1>
+        <h2 id="winnername">Player one is a Winner</h2>
+    </div>
+    
+    <script src="script.js"></script>
+    <!-- <script src="script1.js"></script> -->
+</body>
+</html>
