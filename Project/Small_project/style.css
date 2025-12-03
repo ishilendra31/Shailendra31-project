@@ -43,11 +43,13 @@ body{
     margin-top: 20px;
 }
 #fetchBtn{
-    margin-top: 30px;
+    margin-top: 10px;
     width: 80px;
     height: 40px;
     border: 1px solid black;
     border-radius: 8px;
+    outline: none;
+
 }
 .rep {
     display:none;  
@@ -56,5 +58,6 @@ body{
     height: auto;
     color: black;
     border-radius: 8px;
-    gap: 15px
+    gap: 15px;
+    
 }
