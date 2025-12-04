@@ -46,6 +46,10 @@ let correctans=document.getElementById("correct-ans")
 let arr=[] //array of ans
 let option=[] //array of option
 let cr="" // correct ans
+// let back=document.getElementById("backsubmit-btn")
+// back.addEventListener("click",()=>{
+    // playersname.style.display = "flex"
+// })
 // --------------------------------------------------------- name submit section  start------------------------------------------------------
 namesubmitbtn.addEventListener("click",()=>{
     if(playerone.value!=="" && playertwo.value!==""){
@@ -127,6 +131,7 @@ for(let i=0;i<array_questionoption.length;i+=1){
         if(array_questionoption[i].textContent===cr){
             array_questionoptionradio[i].style.accentColor = 'green'
             correctans.textContent=`Correct Answer is: ${cr}`
+            // correctans.textContent="`Your answer is correct"
             for(let j=0;j<array_questionoption.length;j+=1){
                 array_questionoption.button.removeEventListener("click")
             }
@@ -160,6 +165,7 @@ for(let i=0;i<array_questionoption.length;i+=1){
         else{
         array_questionoptionradio[i].style.accentColor = 'red'
         correctans.textContent=`Correct Answer is: ${cr}`
+        // correctans.textContent="You answer is incorrect"
         }
    })
 }
