@@ -26,11 +26,6 @@
 
 
 
-r=0
-for i in range(5):
-    r+=i
-    i+=5
-print(r)
 
 
 
