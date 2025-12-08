@@ -2,38 +2,38 @@
 // The length of the longest strictly increasing contiguous subarray.
 // The subarray itself.
 
-// let arr=[1, 2, 2, 3, 4, 5, -1, 0]
-// let n=8
-// let subarr=[]
-// let l=0
-// let i=0
-// while(i<n){
-//     let j=i
-//     let temp=[]
-//     let t_l=0
-//     temp[t_l] = arr[j];
-//     t_l+=1
-//     while(j+1<n){
-//         if(arr[j]<arr[j+1]){
-//            temp[t_l]=arr[j+1]
-//             t_l+=1
-//         }
-//         else{
-//             break
-//         }
-//         if(t_l>l){
-//             subarr=[...temp]
-//             l=t_l
-//         }
-//         j+=1
-//     }
-//     i+=1
-// }
-// console.log(subarr,l)
+let arr=[1, 2, 2, 3, 4, 5, -1, 0]
+let n=8
+let subarr=[]
+let l=0
+let i=0
+while(i<n){
+    let j=i
+    let temp=[]
+    let t_l=0
+    temp[t_l] = arr[j];
+    t_l+=1
+    while(j+1<n){
+        if(arr[j]<arr[j+1]){
+           temp[t_l]=arr[j+1]
+            t_l+=1
+        }
+        else{
+            break
+        }
+        if(t_l>l){
+            subarr=[...temp]
+            l=t_l
+        }
+        j+=1
+    }
+    i+=1
+}
+console.log(subarr,l)
 
 // Find the smallest missing positive integer and print it.
 let n1=5
-let arr1=[3, 4, -1, 1, 2]
+let arr1=[3, 4, -1, -2, 0]
 let f=1
 let i1=0
 while(i1<n1){
@@ -47,3 +47,27 @@ while(i1<n1){
     i1+=1
 }
 console.log(f)
+
+let n2=8
+let arr2=[1, 2, -3, 3, -1, 2, -2, 2]
+let sub=[]
+let l1=0
+let i2=0
+while(i2<n2){
+    let j=i2
+    let temp=[]
+    let c=0
+    let sum=0
+    while(j<n2){
+        temp[c]=arr2[j]
+        c+=1
+        sum+=arr2[j]
+        if(sum===0 && c>l1){
+            sub=[...temp]
+            l1=c
+        }
+        j+=1
+    }
+    i2+=1
+}
+console.log(sub,l1)
