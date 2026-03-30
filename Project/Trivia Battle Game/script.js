@@ -46,10 +46,10 @@ let correctans=document.getElementById("correct-ans")
 let arr=[] //array of ans
 let option=[] //array of option
 let cr="" // correct ans
-// let back=document.getElementById("backsubmit-btn")
-// back.addEventListener("click",()=>{
-    // playersname.style.display = "flex"
-// })
+
+
+
+
 // --------------------------------------------------------- name submit section  start------------------------------------------------------
 namesubmitbtn.addEventListener("click",()=>{
     if(playerone.value!=="" && playertwo.value!==""){
@@ -62,7 +62,7 @@ namesubmitbtn.addEventListener("click",()=>{
 })
 // --------------------------------------------------------- name submit section  end------------------------------------------------------
 // --------------------------------------------------------- Api call section  start------------------------------------------------------
-async function qustionrequest(categories,difficulty){
+async function questionrequest(categories,difficulty){
    try{ let url=`https://the-trivia-api.com/v2/questions?categories=${categories}&region=IN&difficulty=${difficulty}&limit=1`
     let response=await fetch(url)
     if (response.status!==200) {
@@ -94,7 +94,7 @@ for(let i=0;i<array.length;i+=1){
             categoryselection.removeChild(array[i])
             }
         }
-        qustionrequest(array[i].id,difficulty).then((response)=>{
+        questionrequest(array[i].id,difficulty).then((response)=>{
             return response.json()
         }).then((data)=>{
             categoryselection.style.display = "none"
@@ -112,11 +112,13 @@ for(let i=0;i<array.length;i+=1){
             [arr[i], arr[j]] = [arr[j], arr[i]];
             }
             option=[questionoptionone,questionoptiontwo,questionoptionthree,questionoptionfour]
-           for (let i=0; i<option.length; i+=1){
+            for (let i=0; i<option.length; i+=1){
             option[i].innerText=`${arr[i]}`
             }
             questionno.textContent=`Question ${questioncount}`
-            turn.textContent=`${playerone.value} turn`
+            if(questioncount === 1){
+            turn.textContent=`${playerone.value} turn`  
+            }
             playeronescore.textContent=`${playerone.value} score: ${plrone}`
             playertwoscore.textContent=`${playertwo.value} score: ${plrtwo}`
         })
@@ -128,13 +130,10 @@ let array_questionoption=[questionoptionone,questionoptiontwo,questionoptionthre
 let array_questionoptionradio=[questionoptiononeradio,questionoptiontworadio,questionoptionthreeradio,questionoptionfourradio]
 for(let i=0;i<array_questionoption.length;i+=1){
     array_questionoption[i].addEventListener("click",()=>{
+        array_questionoptionradio[i].checked = true;
+        disableOptions()
+        correctans.textContent=`Correct Answer is: ${cr}`
         if(array_questionoption[i].textContent===cr){
-            array_questionoptionradio[i].style.accentColor = 'green'
-            correctans.textContent=`Correct Answer is: ${cr}`
-            // correctans.textContent="`Your answer is correct"
-            for(let j=0;j<array_questionoption.length;j+=1){
-                array_questionoption.button.removeEventListener("click")
-            }
             // -------------point----------------//
             if(questioncount <= 2){
                 if(questioncount%2==0){
@@ -160,13 +159,9 @@ for(let i=0;i<array_questionoption.length;i+=1){
                 plrone+=20
                 }
             }
-            // -------------point----------------//
         }
-        else{
-        array_questionoptionradio[i].style.accentColor = 'red'
-        correctans.textContent=`Correct Answer is: ${cr}`
-        // correctans.textContent="You answer is incorrect"
-        }
+        playeronescore.textContent = `${playerone.value} score: ${plrone}`
+        playertwoscore.textContent = `${playertwo.value} score: ${plrtwo}`
    })
 }
 // --------------------------------------------------------- Question option section end-----------------------------------------------------
@@ -177,18 +172,13 @@ Nextquestionbtn.addEventListener("click",()=>{
    if(questionoptiononeradio.checked || 
     questionoptiontworadio.checked || 
     questionoptionthreeradio.checked || 
-    questionoptionfourradio.checked) {
+    questionoptionfourradio.checked){
     questioncount+=1
     arr=[]
     cr=""
     option=[]
     correctans.textContent=""
     if(questioncount<=6){
-        for(let i=0;i<category_click.length;i+=1){
-            if(click===category_click[i]){
-                category_real[i].click()
-            }
-        }
         questionno.textContent=`Question ${questioncount}`
         if(questioncount<=2){
             difficultylevel.textContent=`difficulty level - easy`
@@ -217,15 +207,16 @@ Nextquestionbtn.addEventListener("click",()=>{
                 turn.textContent=`${playertwo.value} turn`
             }
         }
+        for(let i=0;i<category_click.length;i+=1){
+            if(click===category_click[i]){
+                category_real[i].click()
+            }
+        }
         questionoptiononeradio.checked = false
         questionoptiontworadio.checked = false
         questionoptionthreeradio.checked = false
         questionoptionfourradio.checked = false
-        questionoptiononeradio.style.accentColor = '';
-        questionoptiontworadio.style.accentColor = '';
-        questionoptionthreeradio.style.accentColor = '';
-        questionoptionfourradio.style.accentColor = '';
-
+        enableOptions()
     }
     else{
     questiondisplayselection.style.display="none"
@@ -243,15 +234,34 @@ else{
 // Chooseanothercategory strat--------------------------------------------------------------------------------------------------------------
 Chooseanothercategory.addEventListener("click",()=>{
     summarysection.style.display="none"
-    categoryselection.style.display = "grid"
-    questioncount=1
-    questionoptiononeradio.checked = false
-    questionoptiontworadio.checked = false
-    questionoptionthreeradio.checked = false
-    questionoptionfourradio.checked = false
-    arr=[]
-    cr=""
-    option=[]
+    let remainingCategories = document.querySelectorAll(".categoriesbtn")
+    if(remainingCategories.length === 0){
+        endinggamesection.style.display="block"
+        endplayeronescore.textContent=`${playerone.value} score: ${plrone}`
+        endplayertwoscore.textContent=`${playertwo.value} score: ${plrtwo}`
+        if(plrone===plrtwo){
+            winnername.textContent="Draw"
+        }
+        else if(plrone>plrtwo){
+            winnername.textContent=`${playerone.value} is a Winner`
+        }
+        else{
+            winnername.textContent=`${playertwo.value} is a Winner`
+        }
+    } 
+    else {
+        categoryselection.style.display = "grid"
+        questioncount=1
+        difficultylevel.textContent = `difficulty level - easy`
+        questionoptiononeradio.checked = false
+        questionoptiontworadio.checked = false
+        questionoptionthreeradio.checked = false
+        questionoptionfourradio.checked = false
+        arr=[]
+        cr=""
+        option=[]
+        enableOptions()
+    }
 })
 // Chooseanothercategory end-------------------------------------------------------------------------------------------------------------------------
 // endgamebtn section strat-------------------------------------------------------------------------------------------------------------------------
@@ -270,4 +280,31 @@ endgamebtn.addEventListener("click",()=>{
         winnername.textContent=`${playertwo.value} is a Winner`
     }
 })
-// endgamebtn section end-------------------------------------------------------------------------------------------------------------------------
+// endgamebtn section end------------------------------------------------------------------------------------------------
+
+// disable and enable radio button function---------------------start-----------------------------------------------------------------------
+
+function disableOptions() {
+    questionoptiononeradio.disabled = true;
+    questionoptiontworadio.disabled = true;
+    questionoptionthreeradio.disabled = true;
+    questionoptionfourradio.disabled = true;
+    questionoptionone.style.pointerEvents = "none";
+    questionoptiontwo.style.pointerEvents = "none";
+    questionoptionthree.style.pointerEvents = "none";
+    questionoptionfour.style.pointerEvents = "none";
+}
+
+
+function enableOptions() {
+    questionoptiononeradio.disabled = false;
+    questionoptiontworadio.disabled = false;
+    questionoptionthreeradio.disabled = false;
+    questionoptionfourradio.disabled = false;
+    questionoptionone.style.pointerEvents = "auto";
+    questionoptiontwo.style.pointerEvents = "auto";
+    questionoptionthree.style.pointerEvents = "auto";
+    questionoptionfour.style.pointerEvents = "auto";
+}
+
+// // disable and enable radio button function-------------end-----------------------------------------------------------

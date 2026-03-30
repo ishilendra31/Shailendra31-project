@@ -4,7 +4,6 @@ body{
     background-repeat: no-repeat;
     background-position: center;
 }
-
 .playerbox{
     margin-top: 30px;
     background: rgba(120, 150, 220, 0.3); /* background-color: transparent; */
@@ -64,9 +63,6 @@ body{
     width: 200px;
     height: 50px;
 }
-/* #foodanddrink{
-    grid-column: 2; grid-column: span 2 tells the btn to stretch across 2 columns
-} */
 
 
 #question-display-selection{
@@ -81,11 +77,6 @@ body{
     padding-top: 5px;
     padding-left: 50px;
 }
-/* .question-btn{
-    width: auto;
-    margin-left: 10px;
-    margin-top: 5px;
-} */
 .option{
     padding-top: 10px;
 }
